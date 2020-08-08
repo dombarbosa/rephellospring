@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: hellospring-ingress
+spec:
+  backend:
+    serviceName: hellospring
+    servicePort: 80
+  rules:
+  - host: hellospring
+    http:
+      paths:
+      - backend:
+          serviceName: hellospring
+          servicePort: 80

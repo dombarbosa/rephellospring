@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellospring
+spec:
+  selector:
+    matchLabels:
+      run: hellospring
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        run: hellospring
+    spec:
+      containers:
+      - name: hellospring
+        image: db42/hellospring:desafio3-4
+        ports:
+        - containerPort: 8080

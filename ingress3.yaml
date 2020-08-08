@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: hello-ingress
+  namespace: kubernetes-dashboard
+  annotations:
+    kubernetes.io/ingress.class: nginx # aquí estamos definir que tipo de ingress class vamos utilizado
+spec:
+  rules:
+    - host: 104.131.78.195 # aqui definimos o nosso domínio e/ou subdomínio, caso não tenha uma url você poderá remover dns e realizar a chamada pelo ip diretamente.
+      http:
+        paths:
+        - path: / # path da aplicação
+          backend:
+            serviceName: hello-svc # nome do service da aplicação
+            servicePort: 8080

@@ -1,0 +1,16 @@
+apiVersion: k8s.nginx.org/v1
+kind: VirtualServer
+metadata:
+  name: hellospring
+spec:
+  host: hellospring
+  tls:
+    secret: hellospring-secret
+  upstreams:
+  - name: hellospring
+    service: hellospring-svc
+    port: 80
+  routes:
+  - path: /
+    action:
+      pass: hellospring

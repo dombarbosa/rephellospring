@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appspring-deployment
+  labels:
+    role: appspring
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      role: appspring
+  template:
+    metadata:
+      labels:
+        role: appspring
+    spec:
+      containers:
+      - name: appspring
+        image: "db42/hellospring:desafio3-4"
+        resources:
+          requests:
+            cpu: 100m
