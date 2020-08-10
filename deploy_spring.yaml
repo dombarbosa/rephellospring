@@ -9,7 +9,7 @@ spec:
     targetPort: 8080
   selector:
     app: hellospring
-
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
