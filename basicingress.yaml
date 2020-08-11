@@ -4,6 +4,5 @@ metadata:
   name: basic-ingress
 spec:
   backend:
-    serviceName: web
+    serviceName: springsvc
     servicePort: 8090
-    targetPort: 8090
