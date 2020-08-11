@@ -27,5 +27,5 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: hellospring
+          serviceName: hellospring-deployment
           servicePort: 80
