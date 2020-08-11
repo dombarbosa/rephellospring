@@ -10,7 +10,7 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: hellospring
+              serviceName: hellospring-deployment
               servicePort: 3000
 
 
