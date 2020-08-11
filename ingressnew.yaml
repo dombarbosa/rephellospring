@@ -12,5 +12,5 @@ spec:
       paths:
       - path: /*
         backend:
-          serviceName: hellospring
+          serviceName: springsvc
           servicePort: 8090
