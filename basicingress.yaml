@@ -6,4 +6,3 @@ spec:
   backend:
     serviceName: web
     servicePort: 8080
-    targetPort: 8080
