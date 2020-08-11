@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: hellospring-deployment
   labels:
-    app: hello-spring
+    app: hellospring
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: hello-spring
+      app: hellospring
   template:
     metadata:
       labels:
-        app: hello-spring
+        app: hellospring
     spec:
       containers:
       - name: hello-spring
@@ -23,11 +23,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: springapp
+  name: springsvc
 spec:
   type: NodePort
   ports:
     - port: 80
       nodePort: 30011
   selector:
-    app: springapp
+    app: hellospring
