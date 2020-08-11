@@ -17,7 +17,7 @@ spec:
       - name: spring-deploy-app
         image: db42/hellospring:desafio3-4 
         ports:
-        - containerPort: 8080
+        - containerPort: 8090
 
 ---
 
@@ -30,9 +30,9 @@ spec:
   selector:
     app: spring-deploy
   ports:
-  - port: 8080
+  - port: 8090
     nodePort: 30005
-    targetPort: 8080
+    targetPort: 8090
     protocol: TCP
   selector:
     app: spring-deploy
