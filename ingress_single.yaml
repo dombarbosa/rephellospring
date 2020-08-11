@@ -11,7 +11,7 @@ spec:
           - path: /
             backend:
               serviceName: hellospring-deployment
-              servicePort: 3000
+              servicePort: 8090
 
 
 # apiVersion: networking.k8s.io/v1beta1
