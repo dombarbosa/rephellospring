@@ -23,9 +23,9 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: 
-    http:
+  - http: 
       paths:
-      - backend:
-          serviceName: hellospring-deployment
-          servicePort: 80
+        - path: /
+          backend:
+            serviceName: hellospring-deployment
+            servicePort: 80
