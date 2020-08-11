@@ -34,5 +34,3 @@ spec:
     nodePort: 30005
     targetPort: 8090
     protocol: TCP
-  selector:
-    app: spring-deploy
