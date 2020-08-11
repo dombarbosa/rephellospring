@@ -23,7 +23,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: hellospring.com
+  - host: 
     http:
       paths:
       - backend:
