@@ -51,7 +51,7 @@ spec:
   - host: desafio.spring
     http:
       paths:
-      - path: /desafio
+      - path: 
         backend:
           serviceName: spring-app
           servicePort: 8090
