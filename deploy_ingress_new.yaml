@@ -32,6 +32,7 @@ metadata:
     haproxy.org/forwarded-for: "enabled"
     haproxy.org/load-balance: "roundrobin"
 spec:
+  type: NodePort
   selector:
     run: spring-app
   ports:
