@@ -39,6 +39,7 @@ spec:
   - name: http
     port: 8090
     targetPort: 8090
+    nodePort: 30100
     protocol: TCP
 
 ---
